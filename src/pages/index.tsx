@@ -9,7 +9,7 @@ const Index = () => (
         <span className="mt-2 block animate-fade-in-down-1">Tiramitzu</span>
       </h2>
       <p className="text-xl mt-2 max-w-md mx-auto text-neutral-300 animate-fade-in-down-1">
-        I'm a software engineer based in Bogor, Indonesia.
+        I am a software engineer based in Bogor, Indonesia.
       </p>
     </div>
   </Page>
