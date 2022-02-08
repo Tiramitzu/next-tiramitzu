@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="fixed bg-neutral-900 w-screen py-2 bottom-0 left-0 h-16 flex justify-center items-center">
-      <p className="py-1 text-lg text-white flex justify-center items-center">
+    <footer className="flex fixed bottom-0 left-0 justify-center items-center py-2 w-screen h-16 bg-neutral-900">
+      <p className="flex justify-center items-center py-1 text-sm text-white lg:text-lg">
         © Copyright {new Date().getFullYear()}{" "}
         <Link href="https://github.com/Tiramitzu">
           <a className="font-semibold hover:text-violet-500">&nbsp;Tiramitzu</a>

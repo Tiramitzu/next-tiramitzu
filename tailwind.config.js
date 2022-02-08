@@ -17,6 +17,9 @@ module.exports = {
             opacity: "0",
             transform: "translateY(-100px)",
           },
+          "1%": {
+            opacity: "0",
+          },
           "100%": {
             opacity: "1",
             transform: "translateY(0)",
@@ -25,7 +28,7 @@ module.exports = {
       },
       animation: {
         "fade-in-down-1": "fade-in-down 1s ease-out",
-        "fade-in-down-2": "fade-in-down 2s ease-out",
+        "fade-in-down-2": "fade-in-down 1.25s ease-out",
       },
     },
   },
