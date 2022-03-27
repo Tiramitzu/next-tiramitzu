@@ -11,7 +11,7 @@ const Projects = () => {
 			<section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
 				<div className="text-center pb-12">
 					<h2 className="text-base font-bold text-violet-500">
-						The Project My Friends and I've Been Working On
+						The Project My Friends and I&apos;ve Been Working On
 					</h2>
 					<h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
 						Project List
@@ -39,7 +39,7 @@ const Projects = () => {
 							<div className="w-full flex justify-center pt-5 pb-5">
 								<a className="mx-5">
 									<div aria-label="Github" role="img">
-										<Link href="https://github.com/Tiramitzu/next-tiramitzu">
+										<Link href="https://github.com/Tiramitzu/next-tiramitzu" passHref>
 											<button
 												type="button"
 												className="py-2 px-4 bg-violet-700 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -67,13 +67,13 @@ const Projects = () => {
 								Discord Channel Mirror
 							</p>
 							<p className="text-base text-gray-400 font-normal">
-								As the name stated, it's a discord tool to mirror a discord
+								As the name stated, it&apos;s a discord tool to mirror a discord
 								channel to your desired channel. TypeScript coming soon.
 							</p>
 							<div className="w-full flex justify-center pt-5 pb-5">
 								<a className="mx-5">
 									<div aria-label="Github" role="img">
-										<Link href="https://github.com/Tiramitzu/discord-chat-mirror">
+										<Link href="https://github.com/Tiramitzu/discord-chat-mirror" passHref>
 											<button
 												type="button"
 												className="py-2 px-4 bg-violet-700 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -106,7 +106,7 @@ const Projects = () => {
 							<div className="w-full flex justify-center pt-5 pb-5">
 								<a className="mx-5">
 									<div aria-label="Github" role="img">
-										<Link href="https://github.com/Rahagia/rawon">
+										<Link href="https://github.com/Rahagia/rawon" passHref>
 											<button
 												type="button"
 												className="py-2 px-4 bg-violet-700 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
