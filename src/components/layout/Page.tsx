@@ -13,7 +13,7 @@ const Page = (props: PageProps) => (
     <main
       className={"flex-grow flex items-center justify-center"}
     >
-      <div className={"container h-full mx-auto py-16" + props.className}>
+      <div className={"container h-full w-full py-16" + props.className}>
         {props.children}
       </div>
     </main>
