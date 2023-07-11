@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ['repository-images.githubusercontent.com']
+		domains: ['cdn.clytage.org', 'static.vecteezy.com']
 	}
 };
 

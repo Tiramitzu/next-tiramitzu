@@ -11,7 +11,7 @@ const Projects = () => {
 			<section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
 				<div className="text-center pb-12">
 					<h2 className="text-base font-bold text-violet-500">
-						The Project My Friends and I&apos;ve Been Working On
+						The Projects My Friends and I&apos;ve Been Working On
 					</h2>
 					<h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
 						Project List
@@ -34,7 +34,7 @@ const Projects = () => {
 							</p>
 							<p className="text-base text-gray-400 font-normal">
 								It is this project open source / code. Next.js based project
-								written in TSX that I am currently working on right now.
+								written in TSX.
 							</p>
 							<div className="w-full flex justify-center pt-5 pb-5">
 								<a className="mx-5">
@@ -58,7 +58,7 @@ const Projects = () => {
 								height="180"
 								width="180"
 								className="object-center object-cover rounded-full"
-								src="/static/favicon.ico"
+								src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png"
 								alt="photo"
 							/>
 						</div>
@@ -68,12 +68,12 @@ const Projects = () => {
 							</p>
 							<p className="text-base text-gray-400 font-normal">
 								As the name stated, it&apos;s a discord tool to mirror a discord
-								channel to your desired channel. TypeScript coming soon.
+								channel to your desired channel.
 							</p>
 							<div className="w-full flex justify-center pt-5 pb-5">
 								<a className="mx-5">
 									<div aria-label="Github" role="img">
-										<Link href="https://github.com/Tiramitzu/discord-chat-mirror" passHref>
+										<Link href="https://github.com/clytage/discord-chat-mirror" passHref>
 											<button
 												type="button"
 												className="py-2 px-4 bg-violet-700 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
@@ -92,21 +92,20 @@ const Projects = () => {
 								height="180"
 								width="180"
 								className="object-center object-cover rounded-full"
-								src="https://repository-images.githubusercontent.com/236645319/8a781f4e-6955-499a-9e88-380c5adccfa5"
+								src="https://cdn.clytage.org/images/rawon.jpg"
 								alt="photo"
 							/>
 						</div>
 						<div className="text-center">
 							<p className="text-xl text-white font-bold mb-2">Rawon</p>
 							<p className="text-base text-gray-400 font-normal">
-								Rawon is a simple and powerful Discord music bot built to
-								fulfill your production desires. Easy to use, with no coding
-								required.
+								A simple powerful Discord music bot built to fulfill your
+								production desires.
 							</p>
 							<div className="w-full flex justify-center pt-5 pb-5">
 								<a className="mx-5">
 									<div aria-label="Github" role="img">
-										<Link href="https://github.com/Rahagia/rawon" passHref>
+										<Link href="https://github.com/clytage/rawon" passHref>
 											<button
 												type="button"
 												className="py-2 px-4 bg-violet-700 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
