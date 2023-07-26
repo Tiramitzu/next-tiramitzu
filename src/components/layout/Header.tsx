@@ -1,11 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Link from "next/link";
 
 const routes = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
+  { href: "/profile", label: "Profile"}
 ];
 
 function Header() {
@@ -13,24 +13,17 @@ function Header() {
   const router = useRouter();
 
   return (
-    <header className="absolute top-0 z-50 w-full shadow-md bg-neutral-900">
-      <nav className="py-2.5 px-2 rounded sm:px-4 bg-neutral-900 border-neutral-200">
+    <header className="absolute top-0 z-50 w-full shadow-md bg-secondary">
+      <nav className="py-2.5 px-2 rounded sm:px-4 bg-secondary border-neutral-200">
         <div className="container flex flex-wrap justify-between items-center mx-auto w-full">
           <Link href="/" className="flex space-x-4" passHref>
-              <Image
-                src="/static/favicon.ico"
-                className="rounded-full"
-                alt="Tiramitzu"
-                height="45"
-                width="45"
-              />
-              <span className="self-center text-base font-semibold text-white whitespace-nowrap lg:text-lg">
+              <span className="self-center text-base font-semibold text-tertiary whitespace-nowrap lg:text-lg">
                 Tiramitzu
               </span>
           </Link>
           <div className="flex -mr-2 md:hidden md:order-2">
             <button
-              className="inline-flex justify-center items-center p-2 text-white rounded-md hover:text-gray-300 focus:outline-none"
+              className="inline-flex justify-center items-center p-2 text-tertiary rounded-md hover:text-gray-300 focus:outline-none"
               type="button"
               onClick={() => setIsCollapsed(!isCollapsed)}
             >
@@ -55,7 +48,7 @@ function Header() {
             <ul className="flex flex-col mt-2 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
               {routes.map((route) => (
                 <li key={route.label}>
-                  <Link href={route.href} className={`block py-2 pr-4 pl-3 font-semibold hover:opacity-75 text-white ${
+                  <Link href={route.href} className={`block py-2 pr-4 pl-3 font-semibold hover:opacity-75 text-tertiary ${
                         router.pathname === route.href
                           ? "text-violet-500 font-bold"
                           : ""

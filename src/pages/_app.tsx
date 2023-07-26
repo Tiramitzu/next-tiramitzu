@@ -1,9 +1,10 @@
-import '../styles/styles.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Router from 'next/router';
-import 'tailwindcss/tailwind.css';
 import NProgress from 'nprogress';
+import Router from 'next/router';
+import '../styles/styles.scss';
 import Head from 'next/head';
+
+import 'tailwindcss/tailwind.css';
 
 Router.events.on('routeChangeStart', (url) => {
 	console.log(`Loading: ${url}`);

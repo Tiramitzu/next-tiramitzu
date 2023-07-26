@@ -1,10 +1,19 @@
+import colors from "tailwindcss/colors";
+
 module.exports = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
+      colors: {
+        primary: colors.neutral[900],
+        secondary: colors.neutral[800],
+        tertiary: "#ffffff",
+        quaternary: colors.neutral[300],
+      },
       transitionProperty: {
         height: "height",
       },

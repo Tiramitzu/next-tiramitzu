@@ -1,12 +1,12 @@
-import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head />
-        <body className="bg-neutral-800">
+        <body className="bg-primary">
           <Main />
           <NextScript />
         </body>
