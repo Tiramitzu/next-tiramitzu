@@ -14,23 +14,23 @@ const Profile = () => {
 					width={256}
 					className="rounded-full"
 				/>
-				<div className="flex flex-col ml-10 text-left">
+				<div className="flex flex-col ml-10 text-left text-quaternary dark:text-secondary">
 					<div className="flex flex-row">
-						<h1 className="text-tertiary font-bold text-xl">Syah Warid Ghani Akram</h1>
-						<p className="text-quaternary text-xs ml-1">aka Tiramitzu</p>
+						<h1 className="text-tertiary font-bold text-xl dark:text-primary">Syah Warid Ghani Akram</h1>
+						<p className="text-xs ml-1">aka Tiramitzu</p>
 					</div>
-					<p className="text-quaternary">Software Engineer</p>
-					<p className="text-quaternary">
+					<p>Software Engineer</p>
+					<p>
 						<FontAwesomeIcon icon={faGlobeAsia} /> Bogor, Indonesia
 					</p>
-					<p className="text-quaternary">
+					<p>
 						<FontAwesomeIcon icon={faCakeCandles} /> 28 July, 2006 ({curAge().toString()} years old)
 					</p>
 					<br />
-					<p className="text-quaternary">Currently studying at SMK Negeri 1 Ciomas</p>
-					<p className="text-quaternary">
+					<p>Currently studying at SMK Negeri 1 Ciomas</p>
+					<p>
 						Also active partaking in{" "}
-						<a href="https://clytage.org/" className="text-tertiary" target="_blank" rel="noopener noreferrer">
+						<a href="https://clytage.org/" className="text-tertiary dark:text-primary" target="_blank" rel="noopener noreferrer">
 							Clytage
 						</a>
 						{" "}as a Developer

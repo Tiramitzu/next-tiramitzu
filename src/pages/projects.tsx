@@ -31,26 +31,26 @@ const Projects = () => {
 			mainClassName=" items-center justify-center">
 			<section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
 				<div className="text-center pb-12">
-					<h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-tertiary">Project List</h1>
+					<h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-tertiary dark:text-primary">Project List</h1>
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{projects.map(project => (
 						<div
-							className="w-full bg-secondary rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center"
+							className="w-full bg-secondary text-tertiary dark:text-primary rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center dark:bg-tertiary"
 							key={project.name}>
 							<div className="flex flex-row items-center justify-center mb-5">
-								<p className="text-xl text-tertiary font-bold mr-2">{project.name}</p>
+								<p className="text-xl font-bold mr-2">{project.name}</p>
 								<div aria-label="Github" role="img">
 									<a href={project.github} target="_blank" rel="noopener noreferrer">
 										<button
 											type="button"
-											className="p-2 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-tertiary w-full transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+											className="p-2 hover:bg-violet-800 focus:ring-indigo-500 focus:ring-offset-indigo-200 w-full transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
 											<FontAwesomeIcon icon={faGithub} size="2x" />
 										</button>
 									</a>
 								</div>
 							</div>
-							<div className="text-center flex flex-row text-tertiary text-sm">
+							<div className="text-center flex flex-row text-sm">
 								{project.description}
 							</div>
 						</div>
