@@ -1,14 +1,14 @@
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { useTheme } from "next-themes";
+import { faFolder, faHome, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { useTheme } from "next-themes";
+import Link from "next/link";
 
-const routes = [
-	{ href: "/", label: "Home" },
-	{ href: "/projects", label: "Projects" },
-	{ href: "/profile", label: "Profile" }
+export const routes = [
+	{ href: "/", label: "Home", icon: faHome },
+	{ href: "/#projects", label: "Projects", icon: faFolder },
+	{ href: "/#profile", label: "Profile", icon: faUser }
 ];
 
 function Header() {
@@ -24,13 +24,13 @@ function Header() {
 	return (
 		<header className="absolute top-0 z-50 w-full shadow-md bg-secondary dark:bg-tertiary">
 			<nav className="py-2.5 px-2 rounded sm:px-4 border-quaternary dark:border-secondary">
-				<div className="container flex flex-wrap justify-between items-center mx-auto w-full">
+				<div className="flex flex-wrap justify-between items-center mx-auto w-full">
 					<Link href="/" className="flex space-x-4" passHref>
 						<span className="self-center text-base font-semibold text-tertiary whitespace-nowrap lg:text-lg dark:text-primary">
 							Tiramitzu
 						</span>
 					</Link>
-					<div className="flex -mr-2 md:hidden md:order-2">
+					<div className="flex flex-row -mr-2 md:hidden md:order-2">
 						<button
 							className="inline-flex justify-center items-center p-2 text-tertiary rounded-md hover:text-gray-300 focus:outline-none dark:text-primary dark:hover:text-secondary"
 							type="button"
@@ -44,6 +44,20 @@ function Header() {
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
 							</svg>
+						</button>
+						<div className="flex flex-col mt-2 w-10 h-10 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
+							<button
+								onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+								className="text-tertiary dark:text-primary">
+								<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="2x" />
+							</button>
+						</div>
+					</div>
+					<div className="flex flex-col mt-2 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium mobile:hidden">
+						<button
+							onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+							className="text-tertiary dark:text-primary">
+							<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="2x" />
 						</button>
 					</div>
 					<div
@@ -64,13 +78,6 @@ function Header() {
 								</li>
 							))}
 						</ul>
-						<div className="flex flex-col mt-2 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
-							<button
-								onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-								className="text-tertiary dark:text-primary">
-								<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} />
-							</button>
-						</div>
 					</div>
 				</div>
 			</nav>
