@@ -26,13 +26,13 @@ function Header() {
 			<nav className="py-2.5 px-2 rounded sm:px-4 border-quaternary dark:border-secondary">
 				<div className="flex flex-wrap justify-between items-center mx-auto w-full">
 					<Link href="/" className="flex space-x-4" passHref>
-						<span className="self-center text-base font-semibold text-tertiary whitespace-nowrap lg:text-lg dark:text-primary">
+						<span className="self-center text-base font-semibold whitespace-nowrap lg:text-lg text-tertiary dark:text-primary">
 							Tiramitzu
 						</span>
 					</Link>
 					<div className="flex flex-row -mr-2 md:hidden md:order-2">
 						<button
-							className="inline-flex justify-center items-center p-2 text-tertiary rounded-md hover:text-gray-300 focus:outline-none dark:text-primary dark:hover:text-secondary"
+							className="inline-flex justify-center items-center p-2 rounded-md hover:text-gray-300 focus:outline-none text-tertiary dark:text-primary dark:hover:text-secondary"
 							type="button"
 							onClick={() => setIsCollapsed(!isCollapsed)}>
 							<svg

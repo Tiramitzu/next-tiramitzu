@@ -9,13 +9,13 @@ const Profile = () => {
 			title="Tiramitzu's Profile"
 			className="flex flex-col justify-center items-center"
 			mainClassName=" items-center justify-center">
-			<section id="profile" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 mb-60">
-				<div className="text-center pb-12">
-					<h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-tertiary dark:text-primary">
+			<section id="profile" className="px-4 mx-auto mb-60 max-w-6xl sm:px-6 lg:px-4">
+				<div className="pb-12 text-center">
+					<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl font-heading text-tertiary dark:text-primary">
 						Tiramitzu&apos;s Profile
 					</h1>
 				</div>
-				<div className="flex flex-row justify-center mb-60 py-20">
+				<div className="flex flex-row justify-center py-20 mb-60">
 					<div className="mobile:hidden">
 						<Image
 							src="/static/favicon.ico"
@@ -27,8 +27,8 @@ const Profile = () => {
 					</div>
 					<div className="flex flex-col ml-10 text-left text-quaternary dark:text-secondary">
 						<div className="flex flex-row">
-							<h1 className="text-tertiary font-bold text-xl dark:text-primary">Syah Warid Ghani Akram</h1>
-							<p className="text-xs ml-1">aka Tiramitzu</p>
+							<h1 className="text-xl font-bold text-tertiary dark:text-primary">Syah Warid Ghani Akram</h1>
+							<p className="ml-1 text-xs">aka Tiramitzu</p>
 						</div>
 						<p>Software Engineer</p>
 						<p>
