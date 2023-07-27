@@ -36,7 +36,6 @@ const projects = [
 const Projects = () => {
 	return (
 		<Page
-			title="Tiramitzu's Project"
 			className="flex flex-col justify-center items-center"
 			mainClassName=" items-center justify-center">
 			<section id="projects" className="px-4 mx-auto mb-60 max-w-6xl sm:px-6 lg:px-4">
