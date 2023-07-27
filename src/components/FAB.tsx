@@ -1,8 +1,13 @@
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faFolder, faHome, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { routes } from "components/layout/Header";
+
+const routes = [
+	{ href: "/", label: "Home", icon: faHome },
+	{ href: "/#projects", label: "Projects", icon: faFolder },
+	{ href: "/#profile", label: "Profile", icon: faUser }
+];
 
 const FAB = () => {
 	const { resolvedTheme, setTheme } = useTheme();

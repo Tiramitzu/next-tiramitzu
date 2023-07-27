@@ -15,7 +15,7 @@ const Profile = () => {
 						Tiramitzu&apos;s Profile
 					</h1>
 				</div>
-				<div className="flex flex-row justify-center py-20 mb-60">
+				<div className="flex flex-row justify-center py-10">
 					<div className="mobile:hidden">
 						<Image
 							src="/static/favicon.ico"
@@ -72,6 +72,18 @@ const Profile = () => {
 							</a>
 						</p>
 					</div>
+				</div>
+				<div className="flex flex-row justify-evenly mt-5 mb-60">
+					<a href={"/static/CVID.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid.pdf">
+						<button className="px-4 py-2 text-sm font-semibold text-white transition duration-200 ease-in-out bg-tertiary rounded-lg hover:bg-quaternary dark:hover:bg-secondary dark:hover:text-tertiary">
+							Download CV (Bahasa Indonesia)
+						</button>
+					</a>
+					<a href={"/static/CVEN.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid">
+						<button className="px-4 py-2 ml-4 text-sm font-semibold text-white transition duration-200 ease-in-out bg-tertiary rounded-lg hover:bg-quaternary dark:hover:bg-secondary dark:hover:text-tertiary">
+							Download CV (English)
+						</button>
+					</a>
 				</div>
 			</section>
 		</Page>
