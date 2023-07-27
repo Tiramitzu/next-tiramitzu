@@ -1,19 +1,30 @@
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { routes } from "components/layout/Header";
 
-const FAB = () => (
-	<div className="flex fixed right-0 top-1/2 z-50 flex-col gap-2 transform -translate-x-1/2 -translate-y-1/2">
-		{routes.map(({ href, label, icon }) => (
-			<Link
-				key={label}
-				href={href}
-				className="py-2 px-4 font-bold rounded-full shadow-lg bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
-				passHref>
-				<FontAwesomeIcon icon={icon} size="xs" />
-			</Link>
-		))}
-	</div>
-);
+const FAB = () => {
+	const { resolvedTheme, setTheme } = useTheme();
+
+	return (
+		<div className="flex fixed right-0 top-1/2 z-50 flex-col gap-2 transform -translate-x-1/2 -translate-y-1/2">
+			{routes.map(({ href, label, icon }) => (
+				<Link
+					key={label}
+					href={href}
+					className="py-2 px-4 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
+					passHref>
+					<FontAwesomeIcon icon={icon} size="xs" />
+				</Link>
+			))}
+			<button
+				onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+				className="py-2 px-4 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary">
+				<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="1x" />
+			</button>
+		</div>
+	);
+};
 
 export default FAB;

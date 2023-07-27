@@ -27,11 +27,6 @@ const projects = [
 		github: "https://github.com/clytage/discord-chat-mirror"
 	},
 	{
-		name: "Rawon",
-		description: "A simple powerful Discord music bot built to fulfill your production desires.",
-		github: "https://github.com/clytage/rawon"
-	},
-	{
 		name: "WhatsApp Bot",
 		description: "A simple WhatsApp bot built using Node.js.",
 		github: "https://github.com/clytage/whatsapp-bot"
@@ -53,7 +48,7 @@ const Projects = () => {
 				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
 					{projects.map(project => (
 						<div
-							className="flex flex-col justify-center items-center p-12 w-full rounded-lg bg-secondary text-tertiary sahdow-lg dark:text-primary dark:bg-tertiary"
+							className="flex flex-col justify-center items-center p-12 w-full rounded-lg bg-primary text-tertiary sahdow-lg dark:text-primary dark:bg-tertiary"
 							key={project.name}>
 							<div className="flex flex-row justify-center items-center mb-5">
 								<p className="mr-2 text-xl font-bold">{project.name}</p>

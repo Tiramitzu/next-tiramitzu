@@ -6,7 +6,7 @@ class MyDocument extends Document {
 		return (
 			<Html className="scroll-smooth">
 				<Head />
-				<body className="mt-20 bg-primary dark:bg-quaternary">
+				<body className="mt-20 bg-secondary dark:bg-quaternary">
 					<Main />
 					<NextScript />
 				</body>

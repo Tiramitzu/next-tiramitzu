@@ -1,8 +1,6 @@
-import { faFolder, faHome, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFolder, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 
 export const routes = [
@@ -15,14 +13,13 @@ function Header() {
 	const [isCollapsed, setIsCollapsed] = useState(true);
 
 	const [_mounted, setMounted] = useState(false);
-	const { resolvedTheme, setTheme } = useTheme();
 
 	const router = useRouter();
 
 	useEffect(() => setMounted(true), []);
 
 	return (
-		<header className="absolute top-0 z-50 w-full shadow-md bg-secondary dark:bg-tertiary">
+		<header className="absolute top-0 z-50 w-full shadow-md bg-primary dark:bg-tertiary">
 			<nav className="py-2.5 px-2 rounded sm:px-4 border-quaternary dark:border-secondary">
 				<div className="flex flex-wrap justify-between items-center mx-auto w-full">
 					<Link href="/" className="flex w-1/3" passHref>
@@ -44,20 +41,6 @@ function Header() {
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
 							</svg>
-						</button>
-						<div className="flex flex-col justify-center items-center w-10 h-auto md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
-							<button
-								onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-								className="text-tertiary dark:text-primary">
-								<FontAwesomeIcon icon={resolvedTheme === "dark" ? faMoon : faSun} size="2x" />
-							</button>
-						</div>
-					</div>
-					<div className="flex flex-col justify-center items-center mt-2 w-1/3 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium mobile:hidden">
-						<button
-							onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-							className="text-tertiary dark:text-primary">
-							<FontAwesomeIcon icon={resolvedTheme === "dark" ? faMoon : faSun} size="2x" />
 						</button>
 					</div>
 					<div
