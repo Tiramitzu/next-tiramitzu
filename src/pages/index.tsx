@@ -20,8 +20,8 @@ const Index = () => {
 					</Link>
 				))}
 			</div>
-			<Page className="flex flex-col justify-center items-center py-32" mainClassName=" items-center justify-center">
-				<div className="z-20 py-12 px-4 my-20 mt-32 w-full text-center sm:px-6 lg:py-16 lg:px-8">
+			<Page className="flex flex-col justify-center items-center pb-10 h-full" mainClassName=" items-center justify-center">
+				<div className="z-20 px-4 mt-10 w-full text-center sm:px-6 lg:py-16 lg:px-8">
 					<h2 className="text-2xl font-extrabold sm:text-3xl text-tertiary dark:text-primary">
 						<Image
 							src="/static/favicon.ico"

@@ -11,9 +11,9 @@ const Page = (props: PageProps) => (
     <Head {...props} />
     <Header />
     <main
-      className={"flex-grow flex" + props.mainClassName}
+      className={"flex-grow flex " + props.mainClassName}
     >
-      <div className={"container h-full w-auto" + props.className}>
+      <div className={"container h-full w-auto " + props.className}>
         {props.children}
       </div>
     </main>

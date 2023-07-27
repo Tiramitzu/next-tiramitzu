@@ -25,7 +25,7 @@ function Header() {
 		<header className="absolute top-0 z-50 w-full shadow-md bg-secondary dark:bg-tertiary">
 			<nav className="py-2.5 px-2 rounded sm:px-4 border-quaternary dark:border-secondary">
 				<div className="flex flex-wrap justify-between items-center mx-auto w-full">
-					<Link href="/" className="flex space-x-4" passHref>
+					<Link href="/" className="flex w-1/3" passHref>
 						<span className="self-center text-base font-semibold whitespace-nowrap lg:text-lg text-tertiary dark:text-primary">
 							Tiramitzu
 						</span>
@@ -45,7 +45,7 @@ function Header() {
 								<path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
 							</svg>
 						</button>
-						<div className="flex flex-col mt-2 w-10 h-10 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
+						<div className="flex flex-col mt-2 w-1/3 h-10 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
 							<button
 								onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
 								className="text-tertiary dark:text-primary">
@@ -53,7 +53,7 @@ function Header() {
 							</button>
 						</div>
 					</div>
-					<div className="flex flex-col mt-2 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium mobile:hidden">
+					<div className="flex flex-col justify-center items-center mt-2 w-1/3 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium mobile:hidden">
 						<button
 							onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
 							className="text-tertiary dark:text-primary">
@@ -61,7 +61,7 @@ function Header() {
 						</button>
 					</div>
 					<div
-						className={`justify-between items-center w-full md:flex md:w-auto md:order-1 overflow-hidden md:overflow-visible ${
+						className={`justify-end items-center w-full md:flex md:w-1/3 md:order-1 overflow-hidden md:overflow-visible ${
 							isCollapsed ? "h-0" : "h-26"
 						}`}
 						id="list-mobile">
