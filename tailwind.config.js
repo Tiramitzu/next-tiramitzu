@@ -6,7 +6,8 @@ module.exports = {
 	theme: {
 		extend: {
 			screens: {
-				mobile: { max: "768px" }
+				mobile: { max: "768px" },
+				laptop1: { raw: "(min-width: 1024px) and (max-width: 1280px)" }
 			},
 			colors: {
 				primary: "#ffffff",
