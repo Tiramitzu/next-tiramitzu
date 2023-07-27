@@ -48,7 +48,7 @@ const Profile = () => {
 								rel="noopener noreferrer">
 								Clytage
 							</a>{" "}
-							as a General Developer
+							as the Core Team
 						</p>
 						<br />
 						<p>
@@ -63,8 +63,12 @@ const Profile = () => {
 						</p>
 						<p>
 							<FontAwesomeIcon icon={faPhone} /> Phone:{" "}
-							<a href="tel:+6285156958090" className="text-tertiary dark:text-primary">
-								+62 851 5695 8090
+							<a
+								href="https://wa.me/+6285156958090"
+								className="text-tertiary dark:text-primary"
+								target="_blank"
+								rel="noopener noreferrer">
+								+62 851-5695-8090
 							</a>
 						</p>
 					</div>

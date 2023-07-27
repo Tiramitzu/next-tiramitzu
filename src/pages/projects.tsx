@@ -10,8 +10,9 @@ const projects = [
 		github: "https://github.com/tiramitzu/next-tiramitzu"
 	},
 	{
-		name: "SMK Negeri 1 Ciomas",
+		name: "SMK N 1 Ciomas",
 		description: "My school website. Built purely using HTML and CSS.",
+		github: "https://github.com/tiramitzu/smkn1ciomas",
 		web: "https://skanic.tira.my.id"
 	},
 	{

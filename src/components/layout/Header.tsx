@@ -45,7 +45,7 @@ function Header() {
 								<path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path>
 							</svg>
 						</button>
-						<div className="flex flex-col mt-2 w-1/3 h-10 md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
+						<div className="flex flex-col justify-center items-center w-10 h-auto md:flex-row md:mt-0 md:space-x-2 md:text-sm md:font-medium">
 							<button
 								onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
 								className="text-tertiary dark:text-primary">
