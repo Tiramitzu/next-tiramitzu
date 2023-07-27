@@ -1,7 +1,7 @@
 import { faCakeCandles, faEnvelope, faGlobeAsia, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Page from "components/layout/Page";
 import Image from "next/image";
+import Page from "components/layout/Page";
 
 const Profile = () => {
 	return (

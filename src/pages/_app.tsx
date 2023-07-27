@@ -1,14 +1,14 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
-import "../styles/styles.scss";
+import "styles/styles.scss";
 
 import "tailwindcss/tailwind.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<ThemeProvider attribute="class">
+			<ThemeProvider attribute="class" enableSystem={true} enableColorScheme={true} defaultTheme="dark">
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</>

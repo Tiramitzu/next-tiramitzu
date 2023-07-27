@@ -9,10 +9,10 @@ module.exports = {
 				mobile: { max: "768px" }
 			},
 			colors: {
-				primary: colors.neutral[900],
-				secondary: colors.neutral[800],
-				tertiary: "#ffffff",
-				quaternary: colors.neutral[300]
+				primary: "#ffffff",
+				secondary: colors.neutral[300],
+				tertiary: colors.neutral[900],
+				quaternary: colors.neutral[800]
 			},
 			transitionProperty: {
 				height: "height"

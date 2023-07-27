@@ -30,7 +30,7 @@ function Header() {
 							Tiramitzu
 						</span>
 					</Link>
-					<div className="flex flex-row -mr-2 md:hidden md:order-2">
+					<div className="flex flex-row md:hidden md:order-2">
 						<button
 							className="inline-flex justify-center items-center p-2 rounded-md hover:text-gray-300 focus:outline-none text-tertiary dark:text-primary dark:hover:text-secondary"
 							type="button"
@@ -49,7 +49,7 @@ function Header() {
 							<button
 								onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
 								className="text-tertiary dark:text-primary">
-								<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="2x" />
+								<FontAwesomeIcon icon={resolvedTheme === "dark" ? faMoon : faSun} size="2x" />
 							</button>
 						</div>
 					</div>
@@ -57,7 +57,7 @@ function Header() {
 						<button
 							onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
 							className="text-tertiary dark:text-primary">
-							<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="2x" />
+							<FontAwesomeIcon icon={resolvedTheme === "dark" ? faMoon : faSun} size="2x" />
 						</button>
 					</div>
 					<div

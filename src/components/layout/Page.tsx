@@ -1,24 +1,15 @@
 import React, { PropsWithChildren, HTMLAttributes } from "react";
-import Head, { HeadProps } from "./Head";
-import Header from "./Header";
-import Footer from "./Footer";
+import Head, { HeadProps } from "components/layout/Head";
 
-type PageProps = PropsWithChildren<HeadProps> &
-  HTMLAttributes<HTMLDivElement> & { mainClassName?: string };
+type PageProps = PropsWithChildren<HeadProps> & HTMLAttributes<HTMLDivElement> & { mainClassName?: string };
 
 const Page = (props: PageProps) => (
-  <>
-    <Head {...props} />
-    <Header />
-    <main
-      className={"flex-grow flex " + props.mainClassName}
-    >
-      <div className={"container h-full w-auto " + props.className}>
-        {props.children}
-      </div>
-    </main>
-    <Footer />
-  </>
+	<>
+		<Head {...props} />
+		<main className={"flex-grow flex " + props.mainClassName}>
+			<div className={"container h-full w-auto " + props.className}>{props.children}</div>
+		</main>
+	</>
 );
 
 export default Page;

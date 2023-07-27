@@ -1,17 +1,20 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
 	return (
 		<footer className="flex fixed bottom-0 left-0 flex-col justify-center items-center py-3 px-12 w-screen h-20 md:h-16 text-quaternary bg-secondary dark:text-primary dark:bg-tertiary">
 			<hr className="my-2 w-full border border-opacity-50 border-quaternary dark:border-secondary" />
-			<div className="flex flex-row justify-between w-full">
-				<p className="flex py-1 text-sm md:text-base">
+			<div className="flex flex-row justify-between w-full mobile:flex-col mobile:justify-center mobile:items-center">
+				<p className="flex py-1 text-xs md:text-sm lg:text-base">
 					© Copyright {new Date().getFullYear()}{" "}
-					<Link href="https://github.com/Tiramitzu" className="font-semibold hover:text-violet-500">
+					<a
+						href="https://clytage.fandom.com/wiki/Tiramitzu"
+						className="font-semibold hover:text-violet-500"
+						target="_blank"
+						rel="noopener noreferrer">
 						&nbsp;Tiramitzu
-					</Link>
+					</a>
 					. all rights reserved.
 				</p>
 				<div className="flex flex-row">

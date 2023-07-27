@@ -9,35 +9,35 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  z-index: 0;
-  background: #f1f1f1;
+	z-index: 0;
+	background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  z-index: 1;
-  background: #888;
-  border-radius: 5px;
+	z-index: 1;
+	background: #888;
+	border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+	background: #555;
 }
 
 @layer utilities {
-  .outline-black {
-    outline: 2px dotted black;
-    outline-offset: 2px;
-  }
+	.outline-black {
+		outline: 2px dotted black;
+		outline-offset: 2px;
+	}
 
-  .outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
+	.outline-white {
+		outline: 2px dotted white;
+		outline-offset: 2px;
+	}
 }
