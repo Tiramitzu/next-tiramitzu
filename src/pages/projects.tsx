@@ -18,7 +18,7 @@ const projects = [
 	{
 		name: "SkanicBills",
 		description: "A simple school bills management app. Built with Flutter for my school assignment.",
-		web: "https://bills.tira.my.id",
+		github: "https://github.com/tiramitzu/skanicbills",
 		apk: "https://syah.cods3.com"
 	},
 	{
