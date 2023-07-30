@@ -1,9 +1,29 @@
 import { faCakeCandles, faEnvelope, faGlobeAsia, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState, useEffect } from 'react'
 import Image from "next/image";
 import Page from "components/layout/Page";
 
 const Profile = () => {
+	const [data, setData] = useState(null)
+
+	useEffect(() => {
+		const fetchData = async () => {
+
+			const curDate = Date.now();
+			const birthDate = new Date(2006, 6, 28).getTime();
+
+			const result = Math.floor((curDate - birthDate) / 31557600000);
+			setData(result)
+		}
+
+		fetchData().catch((e) => {
+			// handle the error as needed
+			console.error('An error occurred while fetching the data: ', e)
+		})
+	}, [])
+
+
 	return (
 		<Page
 			className="flex flex-col justify-center items-center"
@@ -34,7 +54,7 @@ const Profile = () => {
 							<FontAwesomeIcon icon={faGlobeAsia} /> Bogor, Indonesia
 						</p>
 						<p>
-							<FontAwesomeIcon icon={faCakeCandles} /> 28 July, 2006 ({curAge().toString()} years old)
+							<FontAwesomeIcon icon={faCakeCandles} /> 28 July, 2006 ({data ? `${data}` : '??'} years old)
 						</p>
 						<br />
 						<p>Currently studying at SMK Negeri 1 Ciomas</p>
@@ -88,12 +108,5 @@ const Profile = () => {
 		</Page>
 	);
 };
-
-function curAge() {
-	const curDate = Date.now();
-	const birthDate = new Date(2006, 7, 28).getTime();
-
-	return Math.floor((curDate - birthDate) / 31557600000);
-}
 
 export default Profile;
