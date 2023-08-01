@@ -18,14 +18,14 @@ const FAB = () => {
 				<Link
 					key={label}
 					href={href}
-					className="py-2 px-4 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
+					className="w-10 h-10 p-2 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
 					passHref>
 					<FontAwesomeIcon icon={icon} size="xs" />
 				</Link>
 			))}
 			<button
 				onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-				className="py-2 px-4 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary">
+				className="w-10 h-10 p-2 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary">
 				<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="1x" />
 			</button>
 		</div>
