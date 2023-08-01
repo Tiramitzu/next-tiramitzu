@@ -19,7 +19,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "next": "^13.4.12",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-loading-skeleton": "^3.3.1"
   },
   "devDependencies": {
     "@clytage/eslint-config": "^3.0.1",
@@ -33,10 +34,9 @@
     "eslint": "^8.45.0",
     "eslint-config-next": "13.4.12",
     "next-themes": "^0.2.1",
-    "nprogress": "^0.2.0",
     "postcss": "^8.4.27",
     "rustywind": "^0.16.0",
-    "sass": "^1.64.1",
+    "sass": "^1.64.2",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   }

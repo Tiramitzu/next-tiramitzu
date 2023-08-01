@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Page from "components/layout/Page";
+import { Suspense } from "react";
+import Loading from "components/loading";
 
 const MainPage = () => (
 	<Page
@@ -7,16 +9,17 @@ const MainPage = () => (
 		mainClassName="items-center justify-center">
 		<div className="px-4 mt-10 text-center sm:px-6 lg:py-16 lg:px-8">
 			<h2 className="text-2xl font-extrabold sm:text-3xl text-tertiary dark:text-primary">
-				<Image
-					src="/static/favicon.ico"
-					alt="Tiramitzu"
-					width="182"
-					height="182"
-					placeholder="blur"
-					blurDataURL="LURysgof?bayt7ayofj[~qWBD%of"
-					className="inline rounded-lg shadow-2xl animate-fade-in-down-2"
-				/>
-				<span className="block mt-2 animate-fade-in-down-1">Tiramitzu</span>
+				<Suspense fallback={<Loading />}>
+					<Image
+						src="/static/favicon.ico"
+						alt="Tiramitzu"
+						width="182"
+						height="182"
+						placeholder="blur"
+						blurDataURL="LURysgof?bayt7ayofj[~qWBD%of"
+						className="inline rounded-lg shadow-2xl animate-fade-in-down-2"
+					/>
+				</Suspense>
 			</h2>
 			<p className="mx-auto max-w-md text-xl text-quaternary animate-fade-in-down-1 dark:text-secondary">
 				I am a software engineer based in Bogor, Indonesia.
