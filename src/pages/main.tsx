@@ -20,8 +20,9 @@ const MainPage = () => (
 						className="inline rounded-lg shadow-2xl animate-fade-in-down-2"
 					/>
 				</Suspense>
+				<span className="block mt-2 duration-500 animate-fade-in-down-1">Tiramitzu</span>
 			</h2>
-			<p className="mx-auto max-w-md text-xl text-quaternary animate-fade-in-down-1 dark:text-secondary">
+			<p className="mx-auto max-w-md text-xl duration-500 text-quaternary animate-fade-in-down-1 dark:text-secondary">
 				I am a software engineer based in Bogor, Indonesia.
 			</p>
 		</div>

@@ -7,7 +7,7 @@ function Header() {
 	useEffect(() => setMounted(true), []);
 
 	return (
-		<header className="absolute top-0 z-50 w-full shadow-md bg-primary border-quaternary dark:border-secondary dark:bg-tertiary">
+		<header className="absolute top-0 z-50 w-full shadow-md duration-300 bg-primary border-quaternary dark:border-secondary dark:bg-tertiary">
 			<nav className="py-2.5 px-2 rounded sm:px-4">
 				<div className="flex flex-wrap justify-start items-center mx-auto w-full">
 					<Link href="/" className="flex w-1/3" passHref>
