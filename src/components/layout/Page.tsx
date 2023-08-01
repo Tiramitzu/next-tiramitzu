@@ -6,8 +6,8 @@ type PageProps = HTMLAttributes<HTMLDivElement> & { mainClassName?: string };
 const Page = (props: PageProps) => (
 	<>
 		<Head />
-		<main className={"flex-grow flex " + props.mainClassName}>
-			<div className={"container h-screen w-auto " + props.className}>{props.children}</div>
+		<main className={"flex-grow flex items-center justify-center"}>
+			<div className={"container h-screen w-auto items-center justify-center " + props.className}>{props.children}</div>
 		</main>
 	</>
 );

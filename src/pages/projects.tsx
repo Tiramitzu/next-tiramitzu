@@ -36,8 +36,7 @@ const projects = [
 const Projects = () => {
 	return (
 		<Page
-			className="flex flex-col"
-			mainClassName="items-center justify-center">
+			className="flex flex-col">
 			<section id="projects" className="px-4 mx-auto mb-60 max-w-6xl sm:px-6 lg:px-4">
 				<div className="pb-12 text-center">
 					<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl font-heading text-tertiary dark:text-primary">
