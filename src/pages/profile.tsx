@@ -26,8 +26,8 @@ const Profile = () => {
 
 	return (
 		<Page
-			className="flex flex-col justify-center items-center"
-			mainClassName=" items-center justify-center">
+			className="flex flex-col"
+			mainClassName="items-center justify-center">
 			<section id="profile" className="px-4 mx-auto max-w-6xl sm:px-6 lg:px-4">
 				<div className="pb-12 text-center">
 					<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl font-heading text-tertiary dark:text-primary">
@@ -94,12 +94,12 @@ const Profile = () => {
 				</div>
 				<div className="flex flex-row justify-evenly mt-5 mb-60">
 					<a href={"/static/CVID.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid.pdf">
-						<button className="px-4 py-2 text-sm font-semibold text-white transition duration-200 ease-in-out bg-tertiary rounded-lg hover:bg-quaternary dark:hover:bg-secondary dark:hover:text-tertiary">
+						<button className="py-2 px-4 text-sm font-semibold rounded-lg transition duration-200 ease-in-out text-primary bg-tertiary dark:hover:bg-secondary dark:hover:text-tertiary hover:bg-quaternary">
 							Download CV (Bahasa Indonesia)
 						</button>
 					</a>
 					<a href={"/static/CVEN.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid">
-						<button className="px-4 py-2 ml-4 text-sm font-semibold text-white transition duration-200 ease-in-out bg-tertiary rounded-lg hover:bg-quaternary dark:hover:bg-secondary dark:hover:text-tertiary">
+						<button className="py-2 px-4 ml-4 text-sm font-semibold rounded-lg transition duration-200 ease-in-out text-primary bg-tertiary dark:hover:bg-secondary dark:hover:text-tertiary hover:bg-quaternary">
 							Download CV (English)
 						</button>
 					</a>
