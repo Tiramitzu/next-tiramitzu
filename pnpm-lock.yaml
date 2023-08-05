@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^8.4.27
     version: 8.4.27
   rustywind:
-    specifier: ^0.16.0
-    version: 0.16.0
+    specifier: ^0.17.0
+    version: 0.17.0
   sass:
     specifier: ^1.64.2
     version: 1.64.2
@@ -2539,8 +2539,8 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rustywind@0.16.0:
-    resolution: {integrity: sha512-V3Z8eSY7eVpA8y+6LKVv4l6ary9aVzxYBp5oCu1Nj40PKOivfnGureeDYI9wnSw/qO2DLLpPo90WKlkbJwr7MQ==}
+  /rustywind@0.17.0:
+    resolution: {integrity: sha512-T8wdV6G5haVWfnrgnwgf75NDOBBTEiW4Dy5FCYB2Hs786vYfin/b3AFh5MfOH4rrIy3zwkS6LALlgWA/LOzIsA==}
     hasBin: true
     requiresBuild: true
     dependencies:
