@@ -35,7 +35,7 @@
     "eslint-config-next": "13.4.12",
     "next-themes": "^0.2.1",
     "postcss": "^8.4.27",
-    "rustywind": "^0.17.0",
+    "rustywind": "^0.19.0",
     "sass": "^1.64.2",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
