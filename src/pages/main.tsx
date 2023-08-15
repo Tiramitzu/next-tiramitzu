@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import Loading from "components/loading";
 
 const MainPage = () => (
-	<Page className="flex flex-col h-96">
+	<Page className="flex flex-col h-[40rem]">
 		<div className="px-4 mt-10 text-center sm:px-6 lg:py-16 lg:px-8">
 			<h2 className="text-2xl font-extrabold sm:text-3xl text-tertiary dark:text-primary">
 				<Suspense fallback={<Loading />}>
