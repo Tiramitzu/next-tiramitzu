@@ -7,7 +7,7 @@ const Page = (props: PageProps) => (
 	<>
 		<Head />
 		<main className={"flex-grow flex items-center justify-center"}>
-			<div className={"container w-auto h-96 lg:h-full items-center justify-center " + props.className}>{props.children}</div>
+			<div className={"container w-auto items-center justify-center " + props.className}>{props.children}</div>
 		</main>
 	</>
 );
