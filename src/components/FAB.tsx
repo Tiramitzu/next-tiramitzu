@@ -25,7 +25,7 @@ const FAB = () => {
 			<button
 				onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
 				className="p-2 w-10 h-10 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary">
-				<FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="1x" />
+				<FontAwesomeIcon icon={resolvedTheme === "dark" ? faMoon : faSun} size="1x" />
 			</button>
 		</div>
 	);

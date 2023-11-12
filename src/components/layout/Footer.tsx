@@ -15,7 +15,7 @@ function Footer() {
 						rel="noopener noreferrer">
 						&nbsp;Tiramitzu
 					</a>
-					. all rights reserved.
+					. All rights reserved.
 				</p>
 				<div className="flex flex-row">
 					<a
