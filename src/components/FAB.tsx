@@ -1,12 +1,11 @@
-import { faFolder, faHome, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faFolder, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
 const routes = [
-	{ href: "/", label: "Home", icon: faHome },
+	{ href: "/", label: "Profile", icon: faUser },
 	{ href: "/#projects", label: "Projects", icon: faFolder },
-	{ href: "/#profile", label: "Profile", icon: faUser }
 ];
 
 const FAB = () => {
