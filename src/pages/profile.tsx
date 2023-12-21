@@ -30,7 +30,7 @@ const Profile = () => {
 						My Profile
 					</h1>
 				</div>
-				<div className="flex flex-row mobile:flex-col mobile:items-center justify-center py-10">
+				<div className="flex flex-row justify-center py-10 mobile:flex-col mobile:items-center">
 					<div className="duration-500 hover:scale-110 mobile:mb-10 mobile:w-1/2 mobile:h-1/2">
 						<Image
 							src="/static/favicon.ico"
