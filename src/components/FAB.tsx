@@ -10,6 +10,9 @@ const routes = [
 
 const FAB = () => {
 	const { resolvedTheme, setTheme } = useTheme();
+	let icon = faMoon;
+
+	if (resolvedTheme === "light") icon = faSun;
 
 	return (
 		<div className="flex fixed right-0 top-1/2 z-50 flex-col gap-2 transform -translate-x-1/2 -translate-y-1/2">
@@ -17,15 +20,15 @@ const FAB = () => {
 				<Link
 					key={label}
 					href={href}
-					className="p-2 w-10 h-10 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
+					className="p-2 w-10 h-10 font-bold rounded-full shadow-xl duration-500 hover:scale-110 bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
 					passHref>
 					<FontAwesomeIcon icon={icon} size="xs" />
 				</Link>
 			))}
 			<button
 				onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-				className="p-2 w-10 h-10 font-bold rounded-full shadow-xl bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary">
-				<FontAwesomeIcon icon={resolvedTheme === "dark" ? faMoon : faSun} size="1x" />
+				className="p-2 w-10 h-10 font-bold rounded-full shadow-xl duration-500 hover:scale-110 bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary">
+				<FontAwesomeIcon icon={icon} size="1x" />
 			</button>
 		</div>
 	);

@@ -10,7 +10,7 @@ function Footer() {
 					© Copyright {new Date().getFullYear()}{" "}
 					<a
 						href="https://clytage.fandom.com/wiki/Tiramitzu"
-						className="font-semibold hover:text-violet-500"
+						className="font-semibold hover:text-tertiary dark:hover:text-primary duration-300 hover:scale-110"
 						target="_blank"
 						rel="noopener noreferrer">
 						&nbsp;Tiramitzu
@@ -20,7 +20,7 @@ function Footer() {
 				<div className="flex flex-row">
 					<a
 						href="https://github.com/Tiramitzu"
-						className="hover:text-violet-500"
+						className="hover:text-tertiary dark:hover:text-primary duration-300 hover:scale-110"
 						target="_blank"
 						rel="noopener noreferrer">
 						<FontAwesomeIcon icon={faGithub} size="2x" />

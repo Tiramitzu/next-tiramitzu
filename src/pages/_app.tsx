@@ -8,7 +8,7 @@ import "tailwindcss/tailwind.css";
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<ThemeProvider attribute="class" enableColorScheme={true} defaultTheme="light">
+			<ThemeProvider attribute="class" enableColorScheme={true} defaultTheme="dark">
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</>

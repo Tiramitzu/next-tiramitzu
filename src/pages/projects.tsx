@@ -35,8 +35,7 @@ const projects = [
 
 const Projects = () => {
 	return (
-		<Page
-			className="flex flex-col">
+		<Page className="flex flex-col">
 			<section id="projects" className="px-4 mx-auto mb-60 max-w-6xl sm:px-6 lg:px-4">
 				<div className="pb-12 text-center">
 					<h1 className="text-3xl font-bold md:text-4xl lg:text-5xl font-heading text-tertiary dark:text-primary">
@@ -46,7 +45,7 @@ const Projects = () => {
 				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
 					{projects.map(project => (
 						<div
-							className="flex flex-col justify-center items-center p-12 w-full rounded-lg bg-primary text-tertiary sahdow-lg dark:text-primary dark:bg-tertiary"
+							className="flex flex-col justify-center items-center p-12 w-full rounded-lg shadow-lg duration-500 hover:scale-110 group bg-primary text-tertiary dark:text-primary dark:bg-tertiary"
 							key={project.name}>
 							<div className="flex flex-row justify-center items-center mb-5">
 								<p className="mr-2 text-xl font-bold">{project.name}</p>
