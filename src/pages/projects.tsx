@@ -1,37 +1,9 @@
 import { faAndroid, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
-import Page from "components/layout/Page";
 
-const projects = [
-	{
-		name: "Next Tiramitzu",
-		description: "It is this project open source / code. Next.js based project written in TSX.",
-		github: "https://github.com/tiramitzu/next-tiramitzu"
-	},
-	{
-		name: "SMK N 1 Ciomas",
-		description: "My school website. Built purely using HTML and CSS.",
-		github: "https://github.com/tiramitzu/smkn1ciomas",
-		web: "https://skanic.tira.my.id"
-	},
-	{
-		name: "SkanicBills",
-		description: "A simple school bills management app. Built with Flutter for my school assignment.",
-		github: "https://github.com/tiramitzu/skanicbills",
-		apk: "https://syah.cods3.com"
-	},
-	{
-		name: "Discord Channel Mirror",
-		description: "As the name stated, it's a discord tool to mirror a discord channel to your desired channel.",
-		github: "https://github.com/clytage/discord-chat-mirror"
-	},
-	{
-		name: "WhatsApp Bot",
-		description: "A simple WhatsApp bot built using Node.js.",
-		github: "https://github.com/clytage/whatsapp-bot"
-	}
-];
+import projectList from "components/Projects";
+import Page from "components/layout/Page";
 
 const Projects = () => {
 	return (
@@ -43,7 +15,7 @@ const Projects = () => {
 					</h1>
 				</div>
 				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-					{projects.map(project => (
+					{projectList.map(project => (
 						<div
 							className="flex flex-col justify-center items-center p-12 w-full rounded-lg shadow-lg duration-500 hover:scale-110 group bg-primary text-tertiary dark:text-primary dark:bg-tertiary"
 							key={project.name}>
