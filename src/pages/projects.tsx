@@ -1,4 +1,4 @@
-import { faAndroid, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
 
@@ -39,17 +39,6 @@ const Projects = () => {
 												type="button"
 												className="p-2 w-full text-base font-semibold text-center rounded-lg transition duration-200 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
 												<FontAwesomeIcon icon={faGlobeAsia} size="2x" />
-											</button>
-										</a>
-									</div>
-								) : null}
-								{project.apk ? (
-									<div aria-label="Apk" role="img">
-										<a href={project.apk} target="_blank" rel="noopener noreferrer">
-											<button
-												type="button"
-												className="p-2 w-full text-base font-semibold text-center rounded-lg transition duration-200 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
-												<FontAwesomeIcon icon={faAndroid} size="2x" />
 											</button>
 										</a>
 									</div>
