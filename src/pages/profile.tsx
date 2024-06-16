@@ -1,7 +1,8 @@
-import { faCakeCandles, faEnvelope, faGlobeAsia, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faFileDownload, faCakeCandles, faEnvelope, faGlobeAsia, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+
 import Page from "components/layout/Page";
 
 const Profile = () => {
@@ -42,10 +43,7 @@ const Profile = () => {
 					</div>
 					<div className="flex flex-col ml-10 text-left text-quaternary dark:text-secondary">
 						<div className="flex flex-row duration-500 hover:scale-110">
-							<h1
-								className="text-xl font-bold text-tertiary dark:text-primary">
-								Syah Warid Ghani Akram
-							</h1>
+							<h1 className="text-xl font-bold text-tertiary dark:text-primary">Syah Warid Ghani Akram</h1>
 							<p className="ml-1 text-xs">aka Tiramitzu</p>
 						</div>
 						<p className="duration-500 hover:scale-110">Back-End Developer</p>
@@ -93,14 +91,14 @@ const Profile = () => {
 					</div>
 				</div>
 				<div className="flex flex-row justify-evenly mt-5 mb-60">
-					<a href={"/static/CVID.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid.pdf">
+					{/* <a href={"/static/CVID.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid.pdf">
 						<button className="py-2 px-4 text-sm font-semibold rounded-lg transition duration-500 ease-in-out hover:scale-110 text-primary bg-tertiary dark:hover:opacity-70 dark:hover:bg-tertiary dark:hover:text-primary hover:bg-quaternary">
 							Download CV (Bahasa Indonesia)
 						</button>
-					</a>
-					<a href={"/static/CVEN.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid">
+					</a> */}
+					<a href={"/static/ResumeEN.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid">
 						<button className="py-2 px-4 ml-4 text-sm font-semibold rounded-lg transition duration-500 ease-in-out hover:scale-110 text-primary bg-tertiary dark:hover:opacity-70 dark:hover:bg-tertiary dark:hover:text-primary hover:bg-quaternary">
-							Download CV (English)
+							<FontAwesomeIcon icon={faFileDownload} /> Resume (English)
 						</button>
 					</a>
 				</div>

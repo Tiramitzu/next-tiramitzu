@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import NextHead from "next/head";
 
-const rootURL = "https://tiramitzu.me";
+const rootURL = "https://tira.my.id";
 const defaultDescription = "This is Tiramitzu's personal website created using NextJS TypeScript.";
 const defaultOGImage = rootURL + "/static/favicon.ico";
 const defaultTitle = "Tiramitzu's Personal Website";

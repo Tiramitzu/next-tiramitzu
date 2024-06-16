@@ -1,4 +1,5 @@
 import React, { HTMLAttributes } from "react";
+
 import Head from "components/layout/Head";
 
 type PageProps = HTMLAttributes<HTMLDivElement> & { mainClassName?: string };

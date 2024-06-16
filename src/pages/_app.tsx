@@ -1,9 +1,9 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
-import "styles/styles.scss";
+import { ThemeProvider } from "next-themes";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "tailwindcss/tailwind.css";
+import "styles/styles.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
