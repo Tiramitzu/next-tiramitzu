@@ -37,7 +37,7 @@
     "postcss": "^8.4.39",
     "rustywind": "^0.22.0",
     "sass": "^1.77.8",
-    "tailwindcss": "^3.4.4",
+    "tailwindcss": "^3.4.5",
     "typescript": "^5.5.3"
   }
 }
