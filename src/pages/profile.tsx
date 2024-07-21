@@ -39,6 +39,7 @@ const Profile = () => {
 							height={256}
 							width={256}
 							className="rounded-full"
+							priority
 						/>
 					</div>
 					<div className="flex flex-col ml-10 text-left text-quaternary dark:text-secondary">
@@ -55,9 +56,8 @@ const Profile = () => {
 							<FontAwesomeIcon icon={faCakeCandles} /> 28 July, 2006 ({data ? `${data}` : "??"} years old)
 						</p>
 						<br />
-						<p className="duration-500 hover:scale-110">Currently studying at SMK Negeri 1 Ciomas</p>
 						<p className="duration-500 hover:scale-110">
-							Also active partaking in{" "}
+							Currently active partaking in{" "}
 							<a
 								href="https://stegripe.org/"
 								className="text-tertiary dark:text-primary"
