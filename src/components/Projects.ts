@@ -10,11 +10,11 @@ const projectList = [
 		github: "https://github.com/tiramitzu/smkn1ciomas",
 		web: "https://skanic.tira.my.id"
 	},
-	{
-		name: "SkanicBills",
-		description: "A simple school bills management app. Built with Flutter for my school assignment.",
-		github: "https://github.com/tiramitzu/skanicbills"
-	},
+	// {
+	// 	name: "SkanicBills",
+	// 	description: "A simple school bills management app. Built with Flutter for my school assignment.",
+	// 	github: "https://github.com/tiramitzu/skanicbills"
+	// },
 	{
 		name: "Discord Channel Mirror",
 		description: "As the name stated, it's a discord tool to mirror a discord channel to your desired channel.",

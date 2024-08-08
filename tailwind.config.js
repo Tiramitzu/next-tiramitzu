@@ -2,7 +2,7 @@ import colors from "tailwindcss/colors";
 
 module.exports = {
 	darkMode: "class",
-	content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"],
+	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
 			screens: {

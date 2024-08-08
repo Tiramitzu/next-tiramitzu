@@ -26,7 +26,7 @@ const Projects = () => {
 										<a href={project.github} target="_blank" rel="noopener noreferrer">
 											<button
 												type="button"
-												className="p-2 w-full text-base font-semibold text-center rounded-lg transition duration-200 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
+												className="p-2 w-full text-base font-semibold text-center rounded-lg transition duration-100 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
 												<FontAwesomeIcon icon={faGithub} size="2x" />
 											</button>
 										</a>
@@ -37,7 +37,7 @@ const Projects = () => {
 										<a href={project.web} target="_blank" rel="noopener noreferrer">
 											<button
 												type="button"
-												className="p-2 w-full text-base font-semibold text-center rounded-lg transition duration-200 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
+												className="p-2 w-full text-base font-semibold text-center rounded-lg transition duration-100 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
 												<FontAwesomeIcon icon={faGlobeAsia} size="2x" />
 											</button>
 										</a>
