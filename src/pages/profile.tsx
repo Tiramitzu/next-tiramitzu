@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 import Page from "components/layout/Page";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Profile = () => {
 	const [data, setData] = useState(null);
@@ -86,6 +87,16 @@ const Profile = () => {
 								target="_blank"
 								rel="noopener noreferrer">
 								+62 851-5695-8090
+							</a>
+						</p>
+						<p className="duration-500 hover:scale-110">
+							<FontAwesomeIcon icon={faLinkedin} /> Linkedin:{" "}
+							<a
+								href="https://www.linkedin.com/in/tiramitzu/"
+								className="text-tertiary dark:text-primary"
+								target="_blank"
+								rel="noopener noreferrer">
+								Syah Warid Ghani Akram
 							</a>
 						</p>
 					</div>
