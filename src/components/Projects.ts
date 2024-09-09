@@ -36,6 +36,11 @@ const projectList = [
 		github: "https://github.com/Tiramitzu/attendit-backend"
 	},
 	{
+		name: "Tasty Food",
+		description: "A website I made while interning at CyberLabs. Built using Laravel.",
+		github: "https://github.com/Tiramitzu/tasty-food/"
+	},
+	{
 		name: "Bandrek [WIP]",
 		description:
 			"A standalone MySQL Panel (bundled), which can be used to simplify usage workflows. Using MariaDB as database.",
