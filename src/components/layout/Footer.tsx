@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FaGithub } from "react-icons/fa6";
 
 function Footer() {
 	return (
@@ -23,7 +22,7 @@ function Footer() {
 						className="duration-300 hover:scale-110 dark:hover:text-primary hover:text-tertiary"
 						target="_blank"
 						rel="noopener noreferrer">
-						<FontAwesomeIcon icon={faGithub} size="2x" />
+						<FaGithub size="1.5em" />
 					</a>
 				</div>
 			</div>

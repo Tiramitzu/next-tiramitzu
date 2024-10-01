@@ -1,10 +1,8 @@
-import { faFileDownload, faCakeCandles, faEnvelope, faGlobeAsia, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 import Page from "components/layout/Page";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FaCakeCandles, FaDownload, FaEnvelope, FaGlobe, FaLinkedin, FaPhone } from "react-icons/fa6";
 
 const Profile = () => {
 	const [data, setData] = useState(null);
@@ -48,13 +46,13 @@ const Profile = () => {
 							<h1 className="text-xl font-bold text-tertiary dark:text-primary">Syah Warid Ghani Akram</h1>
 							<p className="ml-1 text-xs">aka Tiramitzu</p>
 						</div>
-						<p className="duration-500 hover:scale-110">Back-End Developer</p>
+						<p className="duration-500 hover:scale-110">Full Stack Developer</p>
 						<br />
-						<p className="duration-500 hover:scale-110">
-							<FontAwesomeIcon icon={faGlobeAsia} /> Bogor, Indonesia
+						<p className="flex flex-row gap-2 duration-500 hover:scale-110">
+							<FaGlobe className="my-auto" /> Bogor, Indonesia
 						</p>
-						<p className="duration-500 hover:scale-110">
-							<FontAwesomeIcon icon={faCakeCandles} /> 28 July, 2006 ({data ? `${data}` : "??"} years old)
+						<p className="flex flex-row gap-2 duration-500 hover:scale-110">
+							<FaCakeCandles className="my-auto" /> 28 July, 2006 ({data ? `${data}` : "??"} years old)
 						</p>
 						<br />
 						<p className="duration-500 hover:scale-110">
@@ -69,8 +67,8 @@ const Profile = () => {
 							as the Core Team
 						</p>
 						<br />
-						<p className="duration-500 hover:scale-110">
-							<FontAwesomeIcon icon={faEnvelope} /> E-Mail:{" "}
+						<p className="flex flex-row gap-2 duration-500 hover:scale-110">
+							<FaEnvelope className="my-auto" /> E-Mail:{" "}
 							<a
 								href="mailto:syah@tira.my.id"
 								className="text-tertiary dark:text-primary"
@@ -79,8 +77,8 @@ const Profile = () => {
 								syah@tira.my.id
 							</a>
 						</p>
-						<p className="duration-500 hover:scale-110">
-							<FontAwesomeIcon icon={faPhone} /> Phone:{" "}
+						<p className="flex flex-row gap-2 duration-500 hover:scale-110">
+							<FaPhone className="my-auto" /> Phone:{" "}
 							<a
 								href="https://wa.me/+6285156958090"
 								className="text-tertiary dark:text-primary"
@@ -89,8 +87,8 @@ const Profile = () => {
 								+62 851-5695-8090
 							</a>
 						</p>
-						<p className="duration-500 hover:scale-110">
-							<FontAwesomeIcon icon={faLinkedin} /> Linkedin:{" "}
+						<p className="flex flex-row gap-2 duration-500 hover:scale-110">
+							<FaLinkedin className="my-auto" /> Linkedin:{" "}
 							<a
 								href="https://www.linkedin.com/in/tiramitzu/"
 								className="text-tertiary dark:text-primary"
@@ -108,8 +106,8 @@ const Profile = () => {
 						</button>
 					</a> */}
 					<a href={"/static/ResumeEN.pdf"} target="_blank" rel="noopener noreferrer" download="CV-SyahWarid">
-						<button className="py-2 px-4 ml-4 text-sm font-semibold rounded-lg transition duration-500 ease-in-out hover:scale-110 text-primary bg-tertiary dark:hover:opacity-70 dark:hover:bg-tertiary dark:hover:text-primary hover:bg-quaternary">
-							<FontAwesomeIcon icon={faFileDownload} /> Resume (English)
+						<button className="flex flex-row gap-2 py-2 px-4 ml-4 text-sm font-semibold rounded-lg transition duration-500 ease-in-out hover:scale-110 text-primary bg-tertiary dark:hover:opacity-70 dark:hover:bg-tertiary dark:hover:text-primary hover:bg-quaternary">
+							<FaDownload className="my-auto" /> Resume (English)
 						</button>
 					</a>
 				</div>
