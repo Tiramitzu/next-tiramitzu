@@ -19,7 +19,7 @@ const FAB = () => {
 				<Link
 					key={label}
 					href={href}
-					className="m-auto p-2 w-10 h-10 font-bold rounded-full shadow-xl duration-500 hover:scale-110 bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
+					className="p-2 m-auto w-10 h-10 font-bold rounded-full shadow-xl duration-500 hover:scale-110 bg-primary text-tertiary dark:bg-tertiary dark:text-secondary dark:hover:bg-quaternary hover:bg-secondary"
 					passHref>
 					{icon}
 				</Link>

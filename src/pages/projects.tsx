@@ -39,7 +39,7 @@ const Projects = ({ data, data1 }: { data: GetPublicRepositoriesQuery; data1: Ge
 												<a href={project.web} target="_blank" rel="noopener noreferrer">
 													<button
 														type="button"
-														className="p-1 align-middle text-base font-semibold text-center rounded-lg transition duration-100 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
+														className="p-1 text-base font-semibold text-center align-middle rounded-lg transition duration-100 ease-in focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-quaternary hover:bg-secondary focus:ring-neutral-200 focus:ring-offset-neutral-200">
 														<FaGlobe />
 													</button>
 												</a>
