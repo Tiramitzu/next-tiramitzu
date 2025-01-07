@@ -67,8 +67,8 @@ importers:
         specifier: ^9.17.0
         version: 9.17.0(jiti@1.21.6)
       eslint-config-next:
-        specifier: 14.2.22
-        version: 14.2.22(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2)
+        specifier: 14.2.23
+        version: 14.2.23(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2)
       next-themes:
         specifier: ^0.4.3
         version: 0.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -767,8 +767,8 @@ packages:
   '@next/env@14.2.20':
     resolution: {integrity: sha512-JfDpuOCB0UBKlEgEy/H6qcBSzHimn/YWjUHzKl1jMeUO+QVRdzmTTl8gFJaNO87c8DXmVKhFCtwxQ9acqB3+Pw==}
 
-  '@next/eslint-plugin-next@14.2.22':
-    resolution: {integrity: sha512-8xCmBMd+hUapMpviPp5g3oDhoWRtbE/QeN/Nvth+SZrdt7xt9TBsH8cePkRwRjXFpwHndpRDNVQROxR/1HiVbg==}
+  '@next/eslint-plugin-next@14.2.23':
+    resolution: {integrity: sha512-efRC7m39GoiU1fXZRgGySqYbQi6ZyLkuGlvGst7IwkTTczehQTJA/7PoMg4MMjUZvZEGpiSEu+oJBAjPawiC3Q==}
 
   '@next/swc-darwin-arm64@14.2.20':
     resolution: {integrity: sha512-WDfq7bmROa5cIlk6ZNonNdVhKmbCv38XteVFYsxea1vDJt3SnYGgxLGMTXQNfs5OkFvAhmfKKrwe7Y0Hs+rWOg==}
@@ -1545,8 +1545,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-next@14.2.22:
-    resolution: {integrity: sha512-4C26Xkqh5RWO9ieNOg7flfWsGiIfzblhXWQHUCa4wgswfjeFm4ku4M/Zc2IGBwA2BmrSn5kyJ8vt+JQg55g65Q==}
+  eslint-config-next@14.2.23:
+    resolution: {integrity: sha512-qtWJzOsDZxnLtXLNtnVjbutHmnEp6QTTSZBTlTCge/Wy0AsUaq8nwR91dBcZZvFg3eY3zKFPBhUkLMHu3Qpauw==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -4146,7 +4146,7 @@ snapshots:
 
   '@next/env@14.2.20': {}
 
-  '@next/eslint-plugin-next@14.2.22':
+  '@next/eslint-plugin-next@14.2.23':
     dependencies:
       glob: 10.3.10
 
@@ -5036,9 +5036,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@14.2.22(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2):
+  eslint-config-next@14.2.23(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2):
     dependencies:
-      '@next/eslint-plugin-next': 14.2.22
+      '@next/eslint-plugin-next': 14.2.23
       '@rushstack/eslint-patch': 1.10.3
       '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2)
       '@typescript-eslint/parser': 7.18.0(eslint@9.17.0(jiti@1.21.6))(typescript@5.7.2)
