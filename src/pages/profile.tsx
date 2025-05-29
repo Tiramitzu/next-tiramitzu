@@ -6,9 +6,6 @@ import Page from "components/layout/Page";
 import { TbCake, TbDownload, TbMail, TbGlobe, TbBrandLinkedin, TbPhone } from "react-icons/tb";
 
 const Profile = ({ user, error }: { user: Discord.APIUser; error: string | null }) => {
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
     const [data, setData] = useState<number | null>(null);
     const [status, setStatus] = useState<"online" | "idle" | "dnd" | "offline" | "invisible" | null>(null);
 
@@ -39,6 +36,10 @@ const Profile = ({ user, error }: { user: Discord.APIUser; error: string | null 
         const interval = setInterval(fetchStatus, 10000);
         return () => clearInterval(interval);
     }, []);
+
+    if (error) {
+        return <div>Error: {error}</div>;
+    }
 
     let statusString = "Unknown";
     let statusColor = "status-neutral";
