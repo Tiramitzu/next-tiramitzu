@@ -31649,24 +31649,27 @@ export type WorkflowsParametersInput = {
 export type GetPublicRepositoriesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetPublicRepositoriesQuery = { __typename?: 'Query', viewer: { __typename?: 'User', repositories: { __typename?: 'RepositoryConnection', nodes?: Array<{ __typename?: 'Repository', openGraphImageUrl: any, name: string, url: any, languages?: { __typename?: 'LanguageConnection', nodes?: Array<{ __typename?: 'Language', color?: string | null, name: string } | null> | null } | null } | null> | null } } };
+export type GetPublicRepositoriesQuery = { __typename?: 'Query', viewer: { __typename?: 'User', id: string, repositories: { __typename?: 'RepositoryConnection', nodes?: Array<{ __typename?: 'Repository', id: string, openGraphImageUrl: any, name: string, url: any, languages?: { __typename?: 'LanguageConnection', nodes?: Array<{ __typename?: 'Language', id: string, color?: string | null, name: string } | null> | null } | null } | null> | null } } };
 
 export type GetRepositoriesContributedToQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetRepositoriesContributedToQuery = { __typename?: 'Query', viewer: { __typename?: 'User', repositoriesContributedTo: { __typename?: 'RepositoryConnection', nodes?: Array<{ __typename?: 'Repository', openGraphImageUrl: any, name: string, url: any, languages?: { __typename?: 'LanguageConnection', nodes?: Array<{ __typename?: 'Language', color?: string | null, name: string } | null> | null } | null } | null> | null } } };
+export type GetRepositoriesContributedToQuery = { __typename?: 'Query', viewer: { __typename?: 'User', id: string, repositoriesContributedTo: { __typename?: 'RepositoryConnection', nodes?: Array<{ __typename?: 'Repository', id: string, openGraphImageUrl: any, name: string, url: any, languages?: { __typename?: 'LanguageConnection', nodes?: Array<{ __typename?: 'Language', id: string, color?: string | null, name: string } | null> | null } | null } | null> | null } } };
 
 
 export const GetPublicRepositoriesDocument = gql`
     query GetPublicRepositories {
   viewer {
+    id
     repositories(visibility: PUBLIC, first: 50) {
       nodes {
+        id
         openGraphImageUrl
         name
         url
         languages(first: 50, orderBy: {direction: DESC, field: SIZE}) {
           nodes {
+            id
             color
             name
           }
@@ -31711,13 +31714,16 @@ export type GetPublicRepositoriesQueryResult = Apollo.QueryResult<GetPublicRepos
 export const GetRepositoriesContributedToDocument = gql`
     query GetRepositoriesContributedTo {
   viewer {
+    id
     repositoriesContributedTo(first: 50, privacy: PUBLIC) {
       nodes {
+        id
         openGraphImageUrl
         name
         url
         languages(first: 50, orderBy: {direction: DESC, field: SIZE}) {
           nodes {
+            id
             color
             name
           }
