@@ -7,17 +7,26 @@ function Header() {
 	useEffect(() => setMounted(true), []);
 
 	return (
-		<header className="absolute top-0 z-50 w-full shadow-md duration-300 bg-primary border-quaternary dark:border-secondary dark:bg-tertiary">
-			<nav className="py-2.5 px-2 rounded sm:px-4">
-				<div className="flex flex-wrap justify-start items-center mx-auto w-full">
-					<Link href="/" className="flex w-1/3" passHref>
-						<span className="self-center text-base font-semibold whitespace-nowrap lg:text-lg text-tertiary dark:text-primary">
-							Tiramitzu
-						</span>
-					</Link>
-				</div>
-			</nav>
-		</header>
+		<nav className="py-0 w-full navbar">
+			<div className="navbar-start">
+				<Link href="/" className="text-xl normal-case btn btn-ghost">
+					Tiramitzu
+				</Link>
+			</div>
+			{/* <div className="navbar-end">
+				<ul className="p-0 menu menu-horizontal">
+					<li>
+						<Link href="/">Home</Link>
+					</li>
+					<li>
+						<Link href="/about">About</Link>
+					</li>
+					<li>
+						<Link href="/blog">Blog</Link>
+					</li>
+				</ul>
+			</div> */}
+		</nav>
 	);
 }
 

@@ -1,3 +1,11 @@
 {
-    "FSharp.suggestGitignore": false
+    "FSharp.suggestGitignore": false,
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "file": "./.vscode/daisyui.md"
+        }
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
