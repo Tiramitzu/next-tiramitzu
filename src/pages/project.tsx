@@ -40,11 +40,9 @@ const Projects = ({ data, data1 }: { data: GetPublicRepositoriesQuery; data1: Ge
                                                 : null}
                                         </div>
                                         <div className="justify-end mt-5 card-actions">
-                                            <button className="btn btn-soft btn-primary">
-                                                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                                                    View on GitHub
-                                                </a>
-                                            </button>
+                                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                                                <button className="btn btn-soft btn-primary">View on GitHub</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
