@@ -19,13 +19,14 @@ export async function getServerSideProps() {
     });
 
     const token = process.env.DISCORD_TOKEN;
-    if (!token) {
-        return { props: { error: "No Discord token provided." } };
+    const userId = process.env.USER_ID;
+    if (!token || !userId) {
+        return { props: { error: "No Discord token or User ID provided." } };
     }
 
-    const res = await fetch("https://discord.com/api/v10/users/@me", {
+    const res = await fetch(`https://discord.com/api/v10/users/${userId}`, {
         headers: {
-            Authorization: `${token}`
+            Authorization: `Bot ${token}`
         }
     });
 
