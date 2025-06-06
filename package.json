@@ -11,20 +11,20 @@
     "generate": "graphql-codegen",
     "rustywind-fix": "rustywind --write ."
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.11.1",
   "eslintConfig": {
     "extends": "@stegripe/eslint-config/typescript",
     "ignorePatterns": "dist/*"
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
-    "@graphql-codegen/cli": "^5.0.6",
+    "@graphql-codegen/cli": "^5.0.7",
     "@graphql-codegen/typescript": "^4.1.6",
     "@graphql-codegen/typescript-operations": "^4.6.1",
     "@graphql-codegen/typescript-react-apollo": "^4.3.3",
     "@tailwindcss/postcss": "^4.1.8",
     "@types/ws": "^8.18.1",
-    "discord-api-types": "^0.38.8",
+    "discord-api-types": "^0.38.11",
     "graphql": "^16.11.0",
     "graphql-tag": "^2.12.6",
     "next": "^15.3.3",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@stegripe/eslint-config": "^2.2.2",
-    "@types/node": "22.15.29",
+    "@types/node": "22.15.30",
     "@types/react": "19.1.6",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.33.1",
@@ -49,7 +49,7 @@
     "postcss": "^8.5.4",
     "prettier-eslint": "^16.4.2",
     "rustywind": "^0.24.0",
-    "sass": "^1.89.0",
+    "sass": "^1.89.1",
     "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"
   }
