@@ -19,8 +19,8 @@
   "dependencies": {
     "@apollo/client": "^3.14.0",
     "@graphql-codegen/cli": "^5.0.7",
-    "@graphql-codegen/typescript": "^4.1.6",
-    "@graphql-codegen/typescript-operations": "^4.6.1",
+    "@graphql-codegen/typescript": "^5.0.0",
+    "@graphql-codegen/typescript-operations": "^5.0.0",
     "@graphql-codegen/typescript-react-apollo": "^4.3.3",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/ws": "^8.18.1",
