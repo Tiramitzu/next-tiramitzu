@@ -36,7 +36,7 @@
     "ws": "^8.18.3"
   },
   "devDependencies": {
-    "@stegripe/eslint-config": "^2.2.2",
+    "@stegripe/eslint-config": "^3.0.0",
     "@types/node": "22.18.0",
     "@types/react": "19.1.12",
     "@typescript-eslint/eslint-plugin": "^8.46.1",
