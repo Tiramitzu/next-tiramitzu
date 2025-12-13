@@ -4,8 +4,5 @@
         {
             "file": "./.vscode/daisyui.md"
         }
-    ],
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    ]
 }

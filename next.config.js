@@ -5,11 +5,7 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: "https",
-				hostname: "opengraph.githubassets.com"
-			},
-			{
-				protocol: "https",
-				hostname: "cdn.discordapp.com"
+				hostname: "**"
 			}
 		]
 	}

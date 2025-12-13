@@ -25,12 +25,12 @@ const experienceList = [
         type: "Contract",
         from: "2024-10",
         to: "Present",
-        location: "Kota Bandar Lampung, Lampung, Indonesia",
+        location: "Kota Jakarta Pusat, DKI Jakarta, Indonesia",
         workType: "Flexible",
         description: "Developing and maintaining software applications to meet client needs."
     },
     {
-        title: "Co-Founder & Director",
+        title: "Co-Founder & Projects Developer",
         company: "PT Nusantara Digital Kolektif",
         type: "Self-Employed",
         from: "2025-02",
