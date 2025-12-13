@@ -31,7 +31,7 @@ const experienceList = [
     },
     {
         title: "Co-Founder & Projects Developer",
-        company: "PT Nusantara Digital Kolektif",
+        company: "PT Stegripe Group Indonesia",
         type: "Self-Employed",
         from: "2025-02",
         to: "Present",

@@ -21,7 +21,7 @@ const Projects = ({ data, data1 }: { data: GetPublicRepositoriesQuery; data1: Ge
                             return (
                                 <div className="shadow-sm card bg-base-100" key={project.name}>
                                     <figure>
-                                        <Image src={repo ? repo.openGraphImageUrl : repo1 ? repo1.openGraphImageUrl : null} alt={project.name} width={100} height={100} />
+                                        <Image src={repo ? repo.openGraphImageUrl : repo1 ? repo1.openGraphImageUrl : null} alt={project.name} width={2048} height={2048} />
                                     </figure>
                                     <div className="card-body">
                                         <h2 className="card-title">{project.name}</h2>
