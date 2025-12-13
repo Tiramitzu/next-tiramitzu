@@ -1,12 +1,13 @@
 schema: "./schema.docs.graphql"
-documents: 'src/**/*.tsx'
+documents: "src/**/*.tsx"
 generates:
   src/generated/graphql.tsx:
     plugins:
-      - 'typescript'
-      - 'typescript-operations'
-      - 'typescript-react-apollo'
-config:
-  withHooks: true
-  withHOC: false
-  withComponent: false
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      apolloClientVersion: 4

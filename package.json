@@ -17,11 +17,7 @@
     "ignorePatterns": "dist/*"
   },
   "dependencies": {
-    "@apollo/client": "^4.0.10",
-    "@graphql-codegen/cli": "^6.1.0",
-    "@graphql-codegen/typescript": "^5.0.6",
-    "@graphql-codegen/typescript-operations": "^4.6.1",
-    "@graphql-codegen/typescript-react-apollo": "^4.3.3",
+    "@apollo/client": "^3.14.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/ws": "^8.18.1",
     "discord-api-types": "^0.38.37",
@@ -36,6 +32,10 @@
     "ws": "^8.18.3"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^6.1.0",
+    "@graphql-codegen/typescript": "^5.0.6",
+    "@graphql-codegen/typescript-operations": "^4.6.1",
+    "@graphql-codegen/typescript-react-apollo": "^4.3.3",
     "@stegripe/eslint-config": "^2.2.2",
     "@types/node": "24.10.3",
     "@types/react": "19.1.17",

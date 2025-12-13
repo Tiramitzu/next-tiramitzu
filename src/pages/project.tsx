@@ -1,4 +1,5 @@
 import { GetPublicRepositoriesQuery, GetRepositoriesContributedToQuery } from "generated/graphql";
+import Image from "next/image";
 import Page from "components/layout/Page";
 import projectList from "lib/projects";
 
@@ -20,7 +21,7 @@ const Projects = ({ data, data1 }: { data: GetPublicRepositoriesQuery; data1: Ge
                             return (
                                 <div className="shadow-sm card bg-base-100" key={project.name}>
                                     <figure>
-                                        <img src={repo ? repo.openGraphImageUrl : repo1 ? repo1.openGraphImageUrl : null} alt={project.name} />
+                                        <Image src={repo ? repo.openGraphImageUrl : repo1 ? repo1.openGraphImageUrl : null} alt={project.name} width={100} height={100} />
                                     </figure>
                                     <div className="card-body">
                                         <h2 className="card-title">{project.name}</h2>

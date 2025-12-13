@@ -5,10 +5,10 @@ import Image from "next/image";
 import Page from "components/layout/Page";
 import CardInfo from "components/CardInfo";
 
-const Profile = ({ user, status, activities }: { user: Discord.APIUser; status: PresenceUpdateStatus; activities: GatewayActivity[] }) => {
+const Profile = ({ user, status, activities }: { user: Discord.APIUser; status: PresenceUpdateStatus; activities?: GatewayActivity[] }) => {
     const [data, setData] = useState<number | null>(null);
     const [currentStatus, setCurrentStatus] = useState<PresenceUpdateStatus>(status);
-    const [currentActivities, setCurrentActivities] = useState<GatewayActivity[]>(activities);
+    const [currentActivities, setCurrentActivities] = useState<GatewayActivity[]>(activities || []);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -63,8 +63,8 @@ const Profile = ({ user, status, activities }: { user: Discord.APIUser; status: 
         statusColor = "status-neutral";
         ringColor = "ring-neutral";
     }
-    const customStatus = currentActivities.find(a => a.type === 4);
-    const richPresence = currentActivities.filter(a => a.type === 0);
+    const customStatus = currentActivities?.find(a => a.type === 4);
+    const richPresence = currentActivities?.filter(a => a.type === 0) || [];
 
     return (
         <Page className="flex flex-col">
