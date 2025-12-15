@@ -11,7 +11,7 @@
     "generate": "graphql-codegen",
     "rustywind-fix": "rustywind --write ."
   },
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.0",
   "eslintConfig": {
     "extends": "@stegripe/eslint-config/typescript",
     "ignorePatterns": "dist/*"
