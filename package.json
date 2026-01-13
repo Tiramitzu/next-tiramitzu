@@ -36,7 +36,7 @@
     "@graphql-codegen/typescript": "^5.0.7",
     "@graphql-codegen/typescript-operations": "^4.6.1",
     "@graphql-codegen/typescript-react-apollo": "^4.4.0",
-    "@stegripe/eslint-config": "^2.2.2",
+    "@stegripe/eslint-config": "^3.0.0",
     "@types/node": "24.10.7",
     "@types/react": "19.2.8",
     "@typescript-eslint/eslint-plugin": "^8.53.0",
