@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^6.1.1",
-    "@graphql-codegen/typescript": "^5.0.8",
+    "@graphql-codegen/typescript": "^5.0.9",
     "@graphql-codegen/typescript-operations": "^4.6.1",
     "@graphql-codegen/typescript-react-apollo": "^4.4.0",
     "@stegripe/eslint-config": "^2.2.2",
@@ -43,7 +43,7 @@
     "@typescript-eslint/parser": "^8.56.1",
     "autoprefixer": "^10.4.23",
     "daisyui": "^5.5.14",
-    "eslint": "^9.39.3",
+    "eslint": "^9.39.4",
     "eslint-config-next": "15.5.12",
     "next-themes": "^0.4.6",
     "postcss": "^8.5.6",
