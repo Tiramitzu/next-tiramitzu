@@ -17,7 +17,7 @@
     "ignorePatterns": "dist/*"
   },
   "dependencies": {
-    "@apollo/client": "^3.14.1",
+    "@apollo/client": "^4.1.9",
     "@tailwindcss/postcss": "^4.2.2",
     "@types/ws": "^8.18.1",
     "discord-api-types": "^0.38.44",
