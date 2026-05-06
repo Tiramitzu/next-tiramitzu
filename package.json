@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^6.2.1",
-    "@graphql-codegen/typescript": "^5.0.10",
-    "@graphql-codegen/typescript-operations": "^5.1.0",
+    "@graphql-codegen/typescript": "^6.0.1",
+    "@graphql-codegen/typescript-operations": "^6.0.1",
     "@graphql-codegen/typescript-react-apollo": "^4.4.2",
     "@stegripe/eslint-config": "^3.0.0",
     "@types/node": "24.12.2",
@@ -51,6 +51,6 @@
     "rustywind": "^0.24.3",
     "sass": "^1.99.0",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   }
 }
